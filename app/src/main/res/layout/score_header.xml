@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header_divider"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_blue"
+        android:orientation="horizontal">
+
+<!--        学年-->
+        <TextView
+            android:id="@+id/academic_year_text"
+            style="@style/HeaderTextView"
+            android:background="@drawable/textview_border_blue"
+            android:text="2019学年" />
+
+<!--        学期-->
+        <TextView
+            android:id="@+id/academic_term_text"
+            style="@style/HeaderTextView"
+            android:background="@drawable/textview_border_green"
+            android:text="第1学期" />
+
+<!--        学分-->
+        <TextView
+            android:id="@+id/term_credits_text"
+            android:background="@drawable/textview_border_purple"
+            style="@style/HeaderTextView"
+            android:text="总学分: 100.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray_blue"
+        android:layout_marginBottom="1dp">
+
+<!--        必修GPA-->
+        <TextView
+            android:id="@+id/term_required_gpa"
+            android:background="@drawable/textview_border_red"
+            style="@style/HeaderTextView"
+            android:text="必修GPA: 3.00" />
+<!--        总GPA-->
+        <TextView
+            android:id="@+id/term_total_gpa"
+            android:background="@drawable/textview_border_yellow"
+            style="@style/HeaderTextView"
+            android:text="总GPA: 3.00" />
+<!--        平均分-->
+        <TextView
+            android:id="@+id/term_mean_score_text"
+            android:background="@drawable/textview_border_orange"
+            style="@style/HeaderTextView"
+            android:text="平均分: 90.99" />
+    </LinearLayout>
+
+</LinearLayout>

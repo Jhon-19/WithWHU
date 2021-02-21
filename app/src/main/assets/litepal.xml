@@ -1,0 +1,10 @@
+<litepal>
+    //数据库名字
+    <dbname value="Scores" />
+
+    <version value="1" />
+    <list>
+        //对应实体类的表名（需要的表都在下面添加）
+        <mapping class="com.jhony.withwhu.ScoreData"/>
+    </list>
+</litepal>

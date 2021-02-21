@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/scores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="@string/user" />
+
+            <EditText
+                android:id="@+id/user_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:maxLength="13"
+                android:theme="@style/MyEditText"
+                android:inputType="number"
+                android:hint="@string/user_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/password_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:layout_margin="10dp"
+                android:theme="@style/MyEditText"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:hint="@string/password_hint" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/query_btn"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/btn_color"
+            android:text="@string/query_scores" />
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

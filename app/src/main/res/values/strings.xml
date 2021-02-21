@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WithWHU</string>
+    <string name="query_scores">查询成绩</string>
+
+<!--    前后缀-->
+<!--    <string name="year_prefix">%1$s学年</string>-->
+<!--    <string name="term_fix">第%1$s学期</string>-->
+    <string name="total_credit_prefix">总学分: %1$s</string>
+    <string name="required_gpa_prefix">必修GPA: %1$s</string>
+    <string name="totla_gpa_prefix">总GPA: %1$s</string>
+    <string name="mean_score_prefix">平均分: %1$s</string>
+    <string name="credit_suffix">%1$s学分</string>
+    <string name="score_suffix">%1$s分</string>
+
+<!--    用户设置信息-->
+    <string name="user_hint">请输入学号</string>
+    <string name="password_hint">请输入统一认证密码</string>
+    <string name="user">学号:</string>
+    <string name="password">密码:</string>
+</resources>
